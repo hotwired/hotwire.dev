@@ -1,0 +1,19 @@
+<!DOCTYPE html>
+<meta charset="utf-8">
+<title>Redirecting to https://hotwired.dev/</title>
+<script>
+    const baseUrl = "https://hotwired.dev";
+    let path = window.location.pathname;
+    if (window.location.search) {
+        path = `${path}${window.location.search}`;
+    }
+
+    if (window.location.hash) {
+        path = `${path}${window.location.hash}`;
+    }
+
+    window.location.assign(`${baseUrl}${path}`);
+</script>
+<noscript>
+    This site requires Javascript to redirect to <a href="https://hotwired.dev/">the primary site.</a>
+</noscript>
